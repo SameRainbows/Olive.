@@ -123,17 +123,19 @@ export default function DrawPage() {
                   Share Your Voice
                 </h2>
                 
-                {/* Preview */}
-                <div className="mb-8 relative group">
-                  <div className="absolute -inset-1 bg-gradient-to-r from-green-600 to-red-600 rounded-xl opacity-50 group-hover:opacity-75 blur transition"></div>
-                  <div className="relative">
-                    <img 
-                      src={URL.createObjectURL(doodleBlob)} 
-                      alt="Your doodle"
-                      className="w-full rounded-xl border-2 border-white/20"
-                    />
-                  </div>
-                </div>
+            {/* Preview */}
+            <div className="mb-8 relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-green-600 to-red-600 rounded-xl opacity-50 group-hover:opacity-75 blur transition"></div>
+              <div className="relative">
+                {doodleBlob && (
+                  <img 
+                    src={URL.createObjectURL(doodleBlob)} 
+                    alt="Your doodle"
+                    className="w-full rounded-xl border-2 border-white/20"
+                  />
+                )}
+              </div>
+            </div>
 
                 {/* Form */}
                 <form onSubmit={handleSubmit} className="space-y-6">
