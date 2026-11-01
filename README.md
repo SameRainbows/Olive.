@@ -118,3 +118,8 @@ MIT - Feel free to use this for any awareness campaigns
 
 Made with ❤️ for Palestine 🇵🇸
 
+
+
+---
+
+Made by [Mehmet Dedeler](https://mehmetdedeler.com).
